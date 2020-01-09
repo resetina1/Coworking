@@ -1,18 +1,112 @@
-.clearfix::before,
-.clearfix::after {
-    content: "";
-    display: table;
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
 }
 
-.clearfix::after {
-    clear: both;
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-html {
-position: relative;
-min-height: 100%;
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-    background: url('../img/background.png');
+  font-family: 'Gotham';
+  font-weight: 300;
+  line-height: 1.42em;
 }
+
+/*header start*/
+.header {
+  background: #27273e;
+}
+
+.contacts__phone {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 21px;
+}
+
+.contacts__schedule {
+  color: #ec1e79;
+  opacity: .7;
+}
+
+/*header end*/
+
+/*sidebar start*/
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-menu__link {
+  text-decoration: none;
+}
+
+.nav-menu__link:hover .nav-menu__icon-main {
+  background-image: url('../img/sidebar/first_icon-hover.png');
+}
+
+.nav-menu__link:hover .nav-menu__icon-second {
+  background-image: url('../img/sidebar/second_icon-hover.png');
+}
+
+.nav-menu__link:hover .nav-menu__icon-third {
+  background-image: url('../img/sidebar/third_icon-hover.png');
+}
+
+.nav-menu__link:hover .nav-menu__text {
+  color: #000000;
+}
+
+
+.nav-menu__icon-main {
+  background: url('../img/sidebar/first_icon.png') no-repeat 50% 50%;
+  width: 18px;
+  height: 15px;
+}
+
+.nav-menu__icon-second {
+  background: url('../img/sidebar/second_icon.png') no-repeat 50% 50%;
+  width: 20px;
+  height: 18px;
+}
+
+.nav-menu__icon-third {
+  background: url('../img/sidebar/third_icon.png') no-repeat 50% 50%;
+  width: 19px;
+  height: 16px;
+}
+
+.nav-menu__text {
+  color: #ec1e79;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*sidebar end*/
+
+/*comments page start*/
+
+.feedback__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 90px;
+  overflow: hidden;
+}
+.feedback__picture {
+  width: 100%;
+  height: 100%;
+}
+/*comments page end*/
