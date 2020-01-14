@@ -27,13 +27,18 @@
     object-fit: cover;
 }
 
-.logo-block__title {
-    margin: 0;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.logo-block__link {
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+    border: 3px solid #ec1e79;
+    padding: 15px 20px;
+    color: #ec1e79;
+    font-family: "Gotham";
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0, 5s;
 }
