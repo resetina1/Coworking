@@ -14,15 +14,18 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <img class="background" src="" alt="" />
+    <header class="header clearfix">
+     <div class="header__left">
       <a href="index.html" class="logo">
         <img src="img/header/logo_header.png" alt="" class="logo-pic" />
       </a>
+     </div>
+     <div class="header__right">
       <div class="contacts">
         <div class="contacts__phone">8 (800) 00-392-10</div>
         <a href="#" class="contacts__schedule">Work schedule</a>
       </div>
+     </div>
     </header>
     <section class="section">
       <aside class="sidebar">
@@ -123,11 +126,47 @@
                   <textarea class="form__textarea" placeholder="Add massage"></textarea>
                 </label>
               </div>
+              <div class="form__btns">
+                <div class="form__controls clearfix">
+                  <div class="form__controls-left">
+                   <div class="form__controls-title">Do you want to display photo?</div>
+                   <div class="form__controls-btns">
+                    <label class="form__radio">
+                      <input type="radio" name="review" class="form__radio-elem">
+                      <div class="form__radio-fake"></div>
+                      <div class="form__radio-text">Yes</div>
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="review" class="form__radio-elem">
+                      <div class="form__radio-fake"></div>
+                      <div class="form__radio-text">No</div>
+                    </label>
+                   </div>
+                  </div>
+                   <div class="form__controls-right">
+                    <input type="submit" value="Send" class="form__submit">
+                   </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
       </main>
     </section>
+    <div class="pagination">
+      <div class="pagination__title">Страница 1 из 7</div>
+      <a href="#" class="pagination__arrow pagination__arrow-left"></a>
+      <ul class="pagination__list">
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+        <li class="pagination__item"></li>
+      </ul>
+      <a href="#" class="pagination__arrow pagination__arrow-right"></a>
+    </div>
     <footer class="footer">
       <div class="footer-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
